@@ -103,26 +103,43 @@
 // 2) cherry 58, 1,3
 // 3) orange 89, 3,4
 
-function shopInfo() {
-  // totalPrice = parseFloat((this.pricePerKg * this.quantity).toFixed(2));
-  console.log(`Name: ${this.name}, total price: ${parseFloat((this.pricePerKg * this.quantity).toFixed(2))}`);
-}
-fruit1 = {
-  name: 'banana',
-  pricePerKg: 30,
-  quantity: 4.5,
-};
-fruit2 = {
-  name: 'cherry',
-  pricePerKg: 58,
-  quantity: 1.3,
-};
-fruit3 = {
-  name: 'banana',
-  pricePerKg: 89,
-  quantity: 3.4,
-};
+// function shopInfo() {
+//   console.log(`Name: ${this.name}, total price: ${parseFloat((this.pricePerKg * this.quantity).toFixed(2))}`);
+// }
 
-shopInfo.call(fruit1);
-shopInfo.call(fruit2);
-shopInfo.call(fruit3);
+// fruit1 = {
+//   name: 'banana',
+//   pricePerKg: 30,
+//   quantity: 4.5,
+// };
+// fruit2 = {
+//   name: 'cherry',
+//   pricePerKg: 58,
+//   quantity: 1.3,
+// };
+// fruit3 = {
+//   name: 'banana',
+//   pricePerKg: 89,
+//   quantity: 3.4,
+// };
+
+// shopInfo.call(fruit1);
+// shopInfo.call(fruit2);
+// shopInfo.call(fruit3);
+
+// const fruits = {
+//   banana: { name: 'Banana', pricePerKg: 30, kg: 4.5 },
+//   cherry: { name: 'Cherry', pricePerKg: 58, kg: 1.3 },
+//   orange: { name: 'Orange', pricePerKg: 89, kg: 3.4 }
+// };
+
+// const fruitsUtils = {
+//   sayFruits: function() {
+//     const totalPrice = this.pricePerKg * this.kg;
+//     console.log(`${this.name} — Total price: ${totalPrice.toFixed(2)} $`);
+//   }
+// };
+
+// fruitsUtils.sayFruits.call(fruits.banana); // Banana — 135.00 $
+// fruitsUtils.sayFruits.call(fruits.cherry); // Cherry — 75.40 $
+// fruitsUtils.sayFruits.call(fruits.orange); // Orange — 302.60 $
