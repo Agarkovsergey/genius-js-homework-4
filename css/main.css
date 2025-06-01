@@ -152,4 +152,10 @@ address {
 .button:hover, .button:focus {
   background-color: #2b7fff;
   color: #ffffff;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
 }/*# sourceMappingURL=main.css.map */
